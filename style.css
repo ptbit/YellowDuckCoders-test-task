@@ -30,8 +30,6 @@ button {
   gap: 48px;
   justify-content: space-between;
 }
-.header__logo {
-}
 
 .nav {
   display: flex;
@@ -45,6 +43,7 @@ button {
   display: flex;
   gap: 24px;
   padding: 0;
+  margin: 0;
   list-style: none;
   align-items: center;
 }
@@ -52,23 +51,62 @@ button {
   height: 100%;
 }
 .nav__link {
+  font-weight: 600;
   color: var(--gray);
   text-decoration: none;
   display: flex;
   align-items: center;
   height: 100%;
-  transition: 0.3s ease-in-out;
+  position: relative;
 }
 .nav__link:hover {
-  border-bottom: 4px solid var(--gray);
+  color: var(--blue);
 }
+.nav__link:hover::after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  position: absolute;
+  background-color: var(--gray);
+}
+
 .nav__link--active {
   color: var(--blue);
-  border-bottom: 4px solid var(--blue);
 }
-.nav__link--active:hover {
-  border-bottom: 4px solid var(--blue);
+.nav__link--active::after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  position: absolute;
+  background-color: var(--blue);
 }
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--gray);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav__link:hover::after {
+  transform: scaleX(1);
+}
+
+.nav__link--active::after {
+  transform: scaleX(1);
+  background-color: var(--blue);
+}
+
 .header__buttons {
   display: flex;
   height: 50px;
@@ -107,11 +145,11 @@ button {
   border: 1px solid var(--neutrals-20);
 }
 .mobile-menu__button {
+  display: none;
   align-items: center;
-  background: var(--var(--white-color)-color);
+  background: var(--white-color);
   border: 1px solid var(--neutrals-20);
   border-radius: 50%;
-  display: flex;
   height: 36px;
   justify-content: center;
   margin-left: auto;
@@ -125,56 +163,6 @@ button {
 }
 .mobile-menu__button:hover {
   background-color: var(--accents-blue);
-}
-/* --- Mobile menu base --- */
-.mobile-menu {
-  position: fixed;
-  inset: 0;
-  top: 78px;
-  background: var(--white-color);
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  z-index: 998;
-}
-
-.mobile-menu__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-.mobile-menu__list li {
-  margin: 16px 0;
-}
-.mobile-menu__list a {
-  color: var(--gray);
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-.mobile-menu__list a:hover {
-  color: var(--blue);
-}
-.mobile-menu__buttons {
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-}
-.mobile-menu__buttons a {
-  width: 200px;
-  text-align: center;
-}
-.mobile-menu__button {
-  display: none;
-}
-.mobile-menu.open {
-  display: flex;
 }
 
 /* --- Responsive MENU --- */
@@ -190,7 +178,6 @@ button {
     display: flex;
     position: fixed;
     inset: 0;
-    top: 0px;
     flex-direction: column;
     z-index: 999;
     background-color: var(--white-color);
@@ -202,10 +189,7 @@ button {
     flex-direction: column;
   }
   .nav__link {
-    border-bottom: 4px solid transparent;
-  }
-  .nav__link--active {
-    border-bottom: 4px solid var(--blue);
+    min-height: 40px;
   }
   .header__buttons {
     margin-top: 40px;
@@ -234,7 +218,7 @@ button {
 
   position: relative;
   padding-top: 1px;
-  background-color: var(--neutrals-10i);
+  background-color: var(--neutrals-10);
   overflow: hidden;
 }
 .hero::before {
