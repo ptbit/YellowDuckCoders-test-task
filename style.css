@@ -17,6 +17,9 @@ button {
   line-height: 1.15;
   margin: 0;
 }
+p{
+  margin: 0;
+}
 .container {
   max-width: 1232px;
   padding: 0 20px;
@@ -214,8 +217,6 @@ button {
 /* *******************HERO*******************  */
 /* *******************HERO*******************  */
 .hero {
-  height: 368px;
-
   position: relative;
   padding-top: 1px;
   background-color: var(--neutrals-10);
@@ -261,4 +262,128 @@ button {
 }
 .hero__breadcrumbs strong {
   color: var(--neutrals-100);
+}
+
+.hero__info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 73px;
+}
+
+.hero__details {
+  display: flex;
+  flex-direction: column;
+}
+.hero__header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.hero__title {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+  color: var(--neutrals-100);
+  margin: 0;
+}
+.hero__trips {
+  padding: 4px 12px;
+  border: 1px solid var(--blue);
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--blue);
+  line-height: 160%;
+}
+.hero__contacts {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 32px;
+}
+.hero__link {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-decoration: none;
+}
+.hero__link-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.hero__features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.feature__logo {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+.feature__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #515b6f;
+  text-wrap: nowrap;
+}
+.feature__value {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #25324b;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 1230px) {
+  .hero__info{
+    gap: 24px;
+  }
+  .hero__features{
+    gap: 16px;
+  }
+  .feature {
+    gap: 8px;
+  }
+  .feature__logo{
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 700px) {
+  .hero__info{
+    flex-direction: column;
+  }
+  .hero__header, .hero__contacts, .hero__features{
+    justify-content: center;
+  }
+  .hero__contacts{
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .hero__features{
+    flex-direction: column;
+  }
+  .feature{
+    justify-content: center;
+  }
+  .feature__logo, .feature__info{
+    text-align: center;
+  }
 }
