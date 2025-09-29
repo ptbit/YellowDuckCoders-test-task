@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YellowDuckCoders test task</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="vars.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="/" class="header__logo">
+          <img src="./img/logo.png" alt="Logo" />
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="/main" class="nav__link">Головна</a></li>
+            <li class="nav__item"><a href="/cargo" class="nav__link">Перевізникам</a></li>
+            <li class="nav__item"><a href="/about" class="nav__link">Про нас</a></li>
+            <li class="nav__item">
+              <a href="/profile" class="nav__link nav__link--active">Профіль перевізника</a>
+            </li>
+          </ul>
+
+          <div class="header__buttons">
+            <a href="/registration" class="buttons__registration">Створити профіль</a>
+            <div class="buttons__divider"></div>
+            <a href="/login" class="buttons__login">Увійти</a>
+          </div>
+        </nav>
+
+        <button class="mobile-menu__button" aria-label="Open menu">
+          <img
+            class="mobile-menu__button__icon-menu"
+            src="/img/burger.svg"
+            alt="Menu"
+            width="20"
+            height="20"
+          />
+          <img
+            class="mobile-menu__button__icon-close-menu"
+            src="/img/cross.svg"
+            alt="Close"
+            width="24"
+            height="24"
+          />
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero__container">
+        <p class="hero__breadcrumbs">Головна / Профіль перевізника / <strong>Stripe</strong></p>
+        <div class="hero__info">
+          <img src="./img/car.png" alt="hero cargo logo" />
+        </div>
+      </div>
+    </section>
+    <script src="menu.js"></script>
+  </body>
+</html>
