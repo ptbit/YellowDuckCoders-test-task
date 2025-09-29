@@ -17,7 +17,7 @@ button {
   line-height: 1.15;
   margin: 0;
 }
-p{
+p {
   margin: 0;
 }
 .container {
@@ -168,49 +168,6 @@ p{
   background-color: var(--accents-blue);
 }
 
-/* --- Responsive MENU --- */
-@media (max-width: 1000px) {
-  .mobile-menu__button {
-    display: flex;
-  }
-  .nav {
-    display: none;
-  }
-  .nav.active {
-    padding-top: 20px;
-    display: flex;
-    position: fixed;
-    inset: 0;
-    flex-direction: column;
-    z-index: 999;
-    background-color: var(--white-color);
-    top: 78px;
-    justify-content: start;
-  }
-  .nav__list {
-    height: auto;
-    flex-direction: column;
-  }
-  .nav__link {
-    min-height: 40px;
-  }
-  .header__buttons {
-    margin-top: 40px;
-    flex-direction: column;
-    gap: 0;
-  }
-  .buttons__divider {
-    display: none;
-  }
-  .buttons__registration {
-    margin-bottom: 15px;
-  }
-  .header__buttons a {
-    width: 100%;
-    text-align: center;
-  }
-}
-
 /* *******************HERO*******************  */
 /* *******************HERO*******************  */
 /* *******************HERO*******************  */
@@ -230,7 +187,7 @@ p{
   display: block;
   width: 170px;
   height: 230px;
-  background-image: url('./img/hero-left.png');
+  background-image: url('./img/hero/hero-left.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -243,7 +200,7 @@ p{
   bottom: 0;
   display: block;
   width: 250px;
-  background-image: url('./img/hero-right.png');
+  background-image: url('./img/hero/hero-right.png');
   background-repeat: no-repeat;
   background-position: bottom;
   opacity: 0.8;
@@ -310,6 +267,7 @@ p{
   gap: 4px;
   align-items: center;
   text-decoration: none;
+  color: var(--brands-primary);
 }
 .hero__link-logo {
   width: 24px;
@@ -350,40 +308,96 @@ p{
   color: #25324b;
   text-wrap: nowrap;
 }
+/* *******************COMPANY*******************  */
+/* *******************COMPANY*******************  */
+/* *******************COMPANY*******************  */
+/* *******************COMPANY*******************  */
+/* *******************COMPANY*******************  */
+
+.company {
+}
 
 @media (max-width: 1230px) {
-  .hero__info{
+  .hero__info {
     gap: 24px;
   }
-  .hero__features{
+  .hero__features {
     gap: 16px;
   }
   .feature {
     gap: 8px;
   }
-  .feature__logo{
+  .feature__logo {
     width: 32px;
     height: 32px;
   }
 }
-@media (max-width: 700px) {
-  .hero__info{
+
+/* --- Responsive MENU Start --- */
+@media (max-width: 1000px) {
+  .mobile-menu__button {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+  .nav.active {
+    padding-top: 20px;
+    display: flex;
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    z-index: 999;
+    background-color: var(--white-color);
+    top: 78px;
+    justify-content: start;
+  }
+  .nav__list {
+    height: auto;
     flex-direction: column;
   }
-  .hero__header, .hero__contacts, .hero__features{
+  .nav__link {
+    min-height: 40px;
+  }
+  .header__buttons {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 0;
+  }
+  .buttons__divider {
+    display: none;
+  }
+  .buttons__registration {
+    margin-bottom: 15px;
+  }
+  .header__buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* --- Responsive MENU End --- */
+
+@media (max-width: 700px) {
+  .hero__info {
+    flex-direction: column;
+  }
+  .hero__header,
+  .hero__contacts,
+  .hero__features {
     justify-content: center;
   }
-  .hero__contacts{
+  .hero__contacts {
     gap: 10px;
     flex-wrap: wrap;
   }
-  .hero__features{
+  .hero__features {
     flex-direction: column;
   }
-  .feature{
+  .feature {
     justify-content: center;
   }
-  .feature__logo, .feature__info{
+  .feature__logo,
+  .feature__info {
     text-align: center;
   }
 }
