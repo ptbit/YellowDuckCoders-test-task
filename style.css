@@ -192,7 +192,9 @@ a {
   color: #ffffff;
   background: var(--blue);
 }
-
+.buttons__registration{
+  color: var(--brands-primary);
+}
 .buttons__registration:hover {
   background-color: var(--neutrals-20);
   border: 1px solid var(--neutrals-20);
