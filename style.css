@@ -698,7 +698,7 @@ a {
   object-fit: cover;
 }
 .driver__name {
-  text-transform:capitalize;
+  text-transform: capitalize;
   font-family: 'Rubik', serif;
   font-style: normal;
   font-weight: 600;
@@ -732,6 +732,68 @@ a {
 }
 .driver__social:hover {
   background-color: var(--accents-blue);
+}
+
+/* *******************SERVICE*******************  */
+/* *******************SERVICE*******************  */
+/* *******************SERVICE*******************  */
+/* *******************SERVICE*******************  */
+/* *******************SERVICE*******************  */
+.service {
+  margin: 72px 0;
+}
+.container {
+}
+.service__container {
+  border-top: 1px solid var(--neutrals-20);
+}
+
+.service__title {
+  margin: 72px 0 8px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  color: var(--neutrals-100);
+}
+.service__text {
+  font-family: 'Rubik', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--neutrals-80);
+}
+.service__list {
+  margin-top: 24px;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.service__item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.service__logo {
+  width: 40px;
+  height: 40px;
+}
+.service__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service__name {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--neutrals-100);
 }
 
 /* *******************MEDIA*******************  */
@@ -811,13 +873,16 @@ a {
   .company__divider {
     display: none;
   }
-  .drivers__list{
+  .drivers__list {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .driver__item{
+  .driver__item {
     min-width: 220px;
     width: fit-content;
+  }
+  .service__list {
+    justify-content: center;
   }
 }
 @media (max-width: 700px) {
@@ -871,5 +936,20 @@ a {
   }
   .calendar {
     padding: 16px 16px 16px 24px;
+  }
+  .drivers {
+    margin: 32px 0;
+  }
+  .drivers__header {
+    padding-top: 16px;
+  }
+  .service {
+    margin: 32px 0;
+  }
+  .service__title {
+    margin-top: 32px;
+  }
+  .service__list {
+    flex-direction: column;
   }
 }
