@@ -2,24 +2,82 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Rubik, serif;
+  margin: 0;
+  font-family: 'Rubik', serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lato, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
 button {
   cursor: pointer;
   font-family: inherit;
   padding: 0;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
 }
-p {
-  margin: 0;
+button:focus {
+  outline: none;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Rubik-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Rubik-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/Rubik-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/Lato-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/Lato-ExtraBold.ttf') format('truetype');
+}
+
 .container {
   max-width: 1232px;
   padding: 0 20px;
@@ -56,7 +114,6 @@ p {
 .nav__link {
   font-weight: 600;
   color: var(--gray);
-  text-decoration: none;
   display: flex;
   align-items: center;
   height: 100%;
@@ -124,7 +181,6 @@ p {
 }
 .header__buttons a {
   padding: 12px 24px;
-  text-decoration: none;
   border-radius: 4px;
   font-weight: 700;
   display: block;
@@ -250,7 +306,7 @@ p {
 .hero__trips {
   padding: 4px 12px;
   border: 1px solid var(--blue);
-  font-family: 'Rubik';
+  font-family: 'Rubik', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -266,7 +322,6 @@ p {
   display: flex;
   gap: 4px;
   align-items: center;
-  text-decoration: none;
   color: var(--brands-primary);
 }
 .hero__link-logo {
@@ -313,9 +368,271 @@ p {
 /* *******************COMPANY*******************  */
 /* *******************COMPANY*******************  */
 /* *******************COMPANY*******************  */
-
 .company {
+  margin: 72px 0;
 }
+.company__container {
+  display: flex;
+  gap: 64px;
+}
+.company__left {
+}
+.company__title {
+  margin-bottom: 16px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: var(--neutrals-100);
+}
+.company__text {
+  margin-bottom: 24px;
+  font-family: 'Rubik', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--neutrals-80);
+}
+.company__socials {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.company__social {
+  border: 1px solid #4640de;
+}
+.social {
+}
+.social__link {
+  display: flex;
+  gap: 16px;
+  padding: 8px;
+  align-items: center;
+  color: var(--brands-primary);
+  font-family: 'Rubik', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+}
+.social__link:hover {
+  color: var(--accent-hover-color);
+}
+.social__logo {
+  width: 24px;
+  height: 24px;
+}
+.company__images {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.company__bus {
+  max-width: 100%;
+}
+.company__right {
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.company__countries {
+}
+.countries {
+}
+.countries__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.countries__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.country__flag {
+  width: 42px;
+  height: 32px;
+}
+.country__name {
+  font-family: 'Rubik', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--neutrals-100);
+}
+.countries__show-all {
+  margin: 8px 0 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: fit-content;
+  font-family: 'Rubik', serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: var(--brands-primary);
+  transition: all 0.3s ease-in-out;
+}
+.countries__show-all:hover {
+  color: var(--accents-blue);
+}
+.countries__show-all img {
+  transition: all 0.3s ease-in-out;
+}
+.countries__show-all--active img {
+  transform: rotate(-180deg);
+}
+.company__divider {
+  height: 1px;
+  background-color: var(--neutrals-20);
+  margin-bottom: 64px;
+}
+.company__trips {
+}
+
+.calendar {
+  padding: 24px 24px 24px 32px;
+  background: var(--white-color);
+  border: 1px solid var(--neutrals-20);
+  box-shadow: var(--drop-shadow-40);
+}
+
+.calendar__buy-ticket {
+  margin-bottom: 15px;
+  border: 1px solid #ccccf5;
+  background-color: transparent;
+  padding: 12px 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  color: var(--brands-primary);
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  transition: all 0.3s ease-in-out;
+}
+.calendar__buy-ticket:hover {
+  background-color: var(--accent-hover-color);
+  color: var(--white-color);
+}
+.calendar__buy-ticket:hover img {
+  filter: brightness(0) invert(1);
+}
+.calendar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+.calendar__month-name {
+  font-family: 'Rubik', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--neutrals-100);
+}
+.calendar__month-buttons {
+  display: flex;
+  gap: 8px;
+}
+.calendar__month-button {
+  width: 24px;
+  height: 24px;
+  background-color: var(--white-color);
+  border: none;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+.calendar__month-button:hover {
+  border: 1px solid var(--blue);
+}
+.calendar__month-button:active {
+  background-color: var(--accent-hover-color);
+}
+.calendar__month-button--prev {
+  transform: rotate(90deg);
+}
+.calendar__month-button--next {
+  transform: rotate(-90deg);
+}
+.calendar__grid {
+  display: flex;
+  flex-direction: column;
+}
+.calendar__days {
+  display: flex;
+  justify-content: space-around;
+}
+.calendar__days p {
+  font-family: 'Rubik', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--neutrals-60);
+}
+.calendar__dates {
+}
+.calendar__dates p,
+.calendar__days p {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar__dates-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2px;
+}
+.calendar__date {
+  font-family: 'Rubik', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--neutrals-80);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.calendar__date:hover {
+  background-color: var(--neutrals-40);
+}
+.calendar__date--inactive {
+  color: var(--neutrals-20);
+  cursor: no-drop;
+}
+.calendar__date--selected {
+  background-color: var(--brands-primary);
+  color: var(--white-color);
+}
+.calendar__date--inactive:hover {
+  background-color: transparent;
+}
+.calendar__date--selected:hover {
+  background-color: var(--brands-primary);
+}
+
+/* *******************MEDIA*******************  */
+/* *******************MEDIA*******************  */
+/* *******************MEDIA*******************  */
+/* *******************MEDIA*******************  */
+/* *******************MEDIA*******************  */
 
 @media (max-width: 1230px) {
   .hero__info {
@@ -376,7 +693,19 @@ p {
   }
 }
 /* --- Responsive MENU End --- */
-
+@media (max-width: 1000px) {
+  .company__container {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .company__right {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .company__divider {
+    display: none;
+  }
+}
 @media (max-width: 700px) {
   .hero__info {
     flex-direction: column;
@@ -399,5 +728,34 @@ p {
   .feature__logo,
   .feature__info {
     text-align: center;
+  }
+  .company {
+    margin: 32px 0;
+  }
+  .company__right {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .company__socials{
+    flex-direction: column;
+    margin-bottom: 20px;
+
+  }
+}
+@media (max-width: 475px) {
+  .container {
+    padding: 0 14px;
+  }
+  .company__container {
+    gap: 16px;
+  }
+  .company__right {
+    min-width: auto;
+  }
+  .countries__show-all {
+    margin-bottom: 16px;
+  }
+  .calendar {
+    padding: 16px 16px 16px 24px;
   }
 }

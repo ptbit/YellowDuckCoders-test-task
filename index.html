@@ -4,23 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YellowDuckCoders test task</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="vars.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -146,14 +129,190 @@
           </div>
         </div>
       </section>
+
       <section class="company">
         <div class="container company__container">
-          <h3 class="company__title"></h3>
+          <div class="company__left">
+            <h3 class="company__title">Опис перевізника</h3>
+            <p class="company__text">
+              Stripe is a software platform for starting and running internet businesses. Millions
+              of businesses rely on Stripe’s software tools to accept payments, expand globally, and
+              manage their businesses online. Stripe has been at the forefront of expanding internet
+              commerce, powering new business models, and supporting the latest platforms, from
+              marketplaces to mobile commerce sites. We believe that growing the GDP of the internet
+              is a problem rooted in code and design, not finance. Stripe is built for developers,
+              makers, and creators. We work on solving the hard technical problems necessary to
+              build global economic infrastructure—from designing highly reliable systems to
+              developing advanced machine learning algorithms to prevent fraud.
+            </p>
+            <h3 class="company__title">Ми у соц. мережах</h3>
+            <div class="company__socials">
+              <div class="company__social social">
+                <a href="twitter.com/stripe" class="social__link">
+                  <img
+                    class="social__logo"
+                    src="./img/svg/twitter.svg"
+                    alt="company twitter page"
+                  />
+                  twitter.com/stripe
+                </a>
+              </div>
+              <div class="company__social social">
+                <a href="facebook.com/StripeHQ" class="social__link">
+                  <img
+                    class="social__logo"
+                    src="./img/svg/facebook.svg"
+                    alt="company facebook page"
+                  />
+                  facebook.com/StripeHQ
+                </a>
+              </div>
+            </div>
+            <div class="company__images">
+              <img class="company__bus" src="./img/company/stripe/bus1.jpg" alt="company bus 1" />
+              <img class="company__bus" src="./img/company/stripe/bus2.jpg" alt="company bus 2" />
+              <img class="company__bus" src="./img/company/stripe/bus3.jpg" alt="company bus 3" />
+            </div>
+          </div>
+          <div class="company__right">
+            <div class="company__countries countries">
+              <h3 class="company__title">Обслуговуємо країни</h3>
+              <div class="countries__list">
+                <div class="countries__item">
+                  <img class="country__flag" src="./img/flags/france.jpg" alt="france flag" />
+                  <p class="country__name">Франція</p>
+                </div>
+                <div class="countries__item">
+                  <img class="country__flag" src="./img/flags/italy.jpg" alt="italy flag" />
+                  <p class="country__name">Італія</p>
+                </div>
+                <div class="countries__item">
+                  <img class="country__flag" src="./img/flags/germany.jpg" alt="germany flag" />
+                  <p class="country__name">Німеччина</p>
+                </div>
+                <div class="countries__item">
+                  <img
+                    class="country__flag"
+                    src="./img/flags/netherlands.jpg"
+                    alt="netherlands flag"
+                  />
+                  <p class="country__name">Нідерланди</p>
+                </div>
+                <div class="countries__item">
+                  <img class="country__flag" src="./img/flags/spain.jpg" alt="spain flag" />
+                  <p class="country__name">Іспанія</p>
+                </div>
+
+                <button class="countries__show-all">
+                  Усі країни
+                  <img src="./img/svg/arrow.svg" alt="all countries" />
+                </button>
+              </div>
+            </div>
+            <div class="company__divider"></div>
+            <div class="company__trips">
+              <h3 class="company__title">Календар поїздок</h3>
+
+              <div class="company__calendar calendar">
+                <button class="calendar__buy-ticket">
+                  <img src="./img/svg/plus.svg" alt="buy ticket button" width="20" height="20" />
+                  Купити квиток
+                </button>
+                <div class="calendar__header">
+                  <p class="calendar__month-name">NOVEMBER 2021</p>
+                  <div class="calendar__month-buttons">
+                    <button class="calendar__month-button">
+                      <img
+                        class="calendar__month-button--prev"
+                        src="./img//svg/arrow.svg"
+                        alt="prev month"
+                      />
+                    </button>
+                    <button class="calendar__month-button">
+                      <img
+                        class="calendar__month-button--next"
+                        src="./img//svg/arrow.svg"
+                        alt="next month"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="calendar__grid">
+                  <div class="calendar__days">
+                    <p>Sun</p>
+                    <p>Mon</p>
+                    <p>Tue</p>
+                    <p>Wed</p>
+                    <p>Thu</p>
+                    <p>Fri</p>
+                    <p>Sat</p>
+                  </div>
+                  <div class="calendar__dates">
+                    <div class="calendar__dates-row">
+                      <p class="calendar__date calendar__date--inactive">26</p>
+                      <p class="calendar__date calendar__date--inactive">27</p>
+                      <p class="calendar__date calendar__date--inactive">28</p>
+                      <p class="calendar__date calendar__date--inactive">29</p>
+                      <p class="calendar__date calendar__date--inactive">30</p>
+                      <p class="calendar__date calendar__date--inactive">31</p>
+                      <p class="calendar__date">1</p>
+                    </div>
+                    <div class="calendar__dates-row">
+                      <p class="calendar__date calendar__date--selected">2</p>
+                      <p class="calendar__date">3</p>
+                      <p class="calendar__date calendar__date--selected">4</p>
+                      <p class="calendar__date">5</p>
+                      <p class="calendar__date">6</p>
+                      <p class="calendar__date">7</p>
+                      <p class="calendar__date">8</p>
+                    </div>
+                    <div class="calendar__dates-row">
+                      <p class="calendar__date">9</p>
+                      <p class="calendar__date">10</p>
+                      <p class="calendar__date">11</p>
+                      <p class="calendar__date">12</p>
+                      <p class="calendar__date">13</p>
+                      <p class="calendar__date">14</p>
+                      <p class="calendar__date">15</p>
+                    </div>
+                    <div class="calendar__dates-row">
+                      <p class="calendar__date">16</p>
+                      <p class="calendar__date">17</p>
+                      <p class="calendar__date">18</p>
+                      <p class="calendar__date">19</p>
+                      <p class="calendar__date calendar__date--selected">20</p>
+                      <p class="calendar__date">21</p>
+                      <p class="calendar__date">22</p>
+                    </div>
+                    <div class="calendar__dates-row">
+                      <p class="calendar__date">23</p>
+                      <p class="calendar__date calendar__date--selected">24</p>
+                      <p class="calendar__date">25</p>
+                      <p class="calendar__date">26</p>
+                      <p class="calendar__date">27</p>
+                      <p class="calendar__date">28</p>
+                      <p class="calendar__date">29</p>
+                    </div>
+                    <div class="calendar__dates-row">
+                      <p class="calendar__date">30</p>
+                      <p class="calendar__date">31</p>
+                      <p class="calendar__date calendar__date--inactive">1</p>
+                      <p class="calendar__date calendar__date--inactive">2</p>
+                      <p class="calendar__date calendar__date--inactive">3</p>
+                      <p class="calendar__date calendar__date--inactive">4</p>
+                      <p class="calendar__date calendar__date--inactive">5</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>footer</footer>
-    <script src="menu.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/countries.js"></script>
   </body>
 </html>
