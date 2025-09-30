@@ -155,7 +155,7 @@ a {
   background-color: var(--gray);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: var(--transition);
 }
 
 .nav__link:hover::after {
@@ -184,7 +184,7 @@ a {
   border-radius: 4px;
   font-weight: 700;
   display: block;
-  transition: 0.5s linear;
+  transition: var(--transition);
   border: 1px solid transparent;
 }
 
@@ -475,13 +475,13 @@ a {
   background-color: transparent;
   border: none;
   color: var(--brands-primary);
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
 }
 .countries__show-all:hover {
   color: var(--accents-blue);
 }
 .countries__show-all img {
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
 }
 .countries__show-all--active img {
   transform: rotate(-180deg);
@@ -514,7 +514,7 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
 }
 .calendar__buy-ticket:hover {
   background-color: var(--accent-hover-color);
@@ -546,7 +546,7 @@ a {
   height: 24px;
   background-color: var(--white-color);
   border: none;
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
   border: 1px solid transparent;
 }
 .calendar__month-button:hover {
@@ -599,7 +599,7 @@ a {
   color: var(--neutrals-80);
   cursor: pointer;
   border-radius: 50%;
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
 }
 .calendar__date:hover {
   background-color: var(--neutrals-40);
@@ -649,7 +649,7 @@ a {
   line-height: 160%;
   background-color: transparent;
   border: none;
-  transition: color 0.3s ease-in-out;
+  transition: var(--transition);
   color: var(--brands-primary);
 }
 .drivers__showAll:hover {
@@ -667,7 +667,7 @@ a {
   align-items: center;
   padding: 24px 5px;
   width: 100%;
-  transition: 0.3s ease-in-out;
+  transition: var(--transition);
 }
 .driver__item:hover {
   box-shadow: var(--drop-shadow-40);
@@ -715,7 +715,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  transition: background-color 0.3s ease-in-out;
+  transition: var(--transition);
 }
 .driver__social:hover {
   background-color: var(--accents-blue);
@@ -870,7 +870,7 @@ a {
   color: var(--white-color);
   padding: 13px 28px;
   border: transparent;
-  transition: background-color 0.3s ease-in-out;
+  transition: var(--transition);
 }
 .reviews__addBtn:hover {
   background-color: var(--accent-hover-color);
@@ -1054,7 +1054,7 @@ a {
   text-align: center;
   background-color: var(--brands-primary);
   color: var(--white-color);
-  transition: background-color 0.3s ease-in-out;
+  transition: var(--transition);
 }
 .footer__contacts-button:hover {
   background-color: var(--accent-hover-color);
@@ -1074,6 +1074,13 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 160%;
+  transition: var(--transition);
+}
+.contact__link:hover {
+  color: var(--accent-hover-color);
+}
+.contact__link:active {
+  color: var(--accents-blue);
 }
 
 .footer__bot {
@@ -1112,7 +1119,7 @@ a {
   align-items: center;
   background-color: #363944;
   border-radius: 50%;
-  transition: background-color 0.3s ease-in-out;
+  transition: var(--transition);
 }
 .footer__social-media-item:hover {
   background-color: #83858b;
@@ -1291,7 +1298,7 @@ a {
   .footer__nav {
     margin-bottom: 15px;
   }
-  .footer__bot{
+  .footer__bot {
     flex-direction: column;
     align-items: center;
     gap: 15px;
