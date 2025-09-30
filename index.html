@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YellowDuckCoders test task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="vars.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -130,7 +133,7 @@
         </div>
       </section>
 
-      <section class="company">
+      <!-- <section class="company">
         <div class="container company__container">
           <div class="company__left">
             <h3 class="company__title">Опис перевізника</h3>
@@ -413,7 +416,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="service">
         <div class="container service__container">
@@ -451,10 +454,184 @@
           </div>
         </div>
       </section>
+
+      <section class="reviews">
+        <div class="reviews__triangle"></div>
+        <div class="container reviews__container">
+          <div class="reviews__header">
+            <h2 class="reviews__title">Що <span>кажуть люди?</span></h2>
+            <p class="reviews__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="reviews__addBtn">Залишити відгук</button>
+          </div>
+
+          <div class="swiper reviews__list">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review">
+                <div class="review__header">
+                  <div class="review__avatar">
+                    <img src="./img/avatars/dzho.jpg" alt="review author avatar" />
+                  </div>
+                  <div class="review__author">
+                    <p class="review__author-name">Джо Байден</p>
+                    <p class="review__author-address">Вашингтон - Київ</p>
+                    <p class="review__date">20 Лютого 2023</p>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Наближається річниця жорстокого вторгнення Росії в Україну, і сьогодні я перебуваю
+                  в Києві, щоб зустрітися з президентом Зеленським і підтвердити нашу непохитну
+                  відданість демократії, суверенітету та територіальній цілісності України.
+                </p>
+                <div class="review__stars">
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                </div>
+              </div>
+
+              <div class="swiper-slide review">
+                <div class="review__header">
+                  <div class="review__avatar">
+                    <img src="./img/avatars/gary.jpg" alt="review author avatar" />
+                  </div>
+                  <div class="review__author">
+                    <p class="review__author-name">Принц Гаррі</p>
+                    <p class="review__author-address">Лондон - Київ</p>
+                    <p class="review__date">12 вересня 2025</p>
+                  </div>
+                </div>
+                <p class="review__text">
+                  "Ми не можемо зупинити війну, але ми можемо зробити все, на що ми здатні, щоб
+                  допомогти відновленню", – цитує Guardian герцога Сассекського.
+                </p>
+                <div class="review__stars">
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                </div>
+              </div>
+
+              <div class="swiper-slide review">
+                <div class="review__header">
+                  <div class="review__avatar">
+                    <img src="./img/avatars/author-3.webp" alt="review author avatar" />
+                  </div>
+                  <div class="review__author">
+                    <p class="review__author-name">Катерина</p>
+                    <p class="review__author-address">Київ - Кишинів</p>
+                    <p class="review__date">11 Вересня 2023</p>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Обрала бус з Wi-Fi, туалетом і навіть перевезенням тварин – таких опцій не знайдеш
+                  просто так. А ще є фото салону, відгуки, рейтинг водія – все прозоро, зручно та
+                  безпечно.
+                </p>
+                <div class="review__stars">
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                </div>
+              </div>
+
+              <div class="swiper-slide review">
+                <div class="review__header">
+                  <div class="review__avatar">
+                    <img src="./img/avatars/author-1.jpg" alt="review author avatar" />
+                  </div>
+                  <div class="review__author">
+                    <p class="review__author-name">Ben Yardley</p>
+                    <p class="review__author-address">Київ - Жешув</p>
+                    <p class="review__date">1 Липня 2024</p>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Цей сервіс економить купу часу та нервів. Не треба сидіти в десятках
+                  Facebook-груп, шукати випадкові оголошення. Тут усе зібрано, структуровано й
+                  доступно. Особливо зручно , що можна подивитися історію перевізника – одразу
+                  видно, кому можна довіряти.
+                </p>
+                <div class="review__stars">
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                </div>
+              </div>
+
+              <div class="swiper-slide review">
+                <div class="review__header">
+                  <div class="review__avatar">
+                    <img src="./img/avatars/author-2.jpg" alt="review author avatar" />
+                  </div>
+                  <div class="review__author">
+                    <p class="review__author-name">Craig Martin</p>
+                    <p class="review__author-address">Львів - Париж</p>
+                    <p class="review__date">30 Вересня 2025</p>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Раніше було дуже важко з організацією – дзвінки одночасно йшли і на телефон, і в
+                  Viber, і в Telegram, і в WhatsApp. Часто губилися замовлення, не було порядку.
+                  Тепер усе бронювання йде через сайт – чітко видно, хто куди їде, скільки місць
+                  зайнято. І головне – стало більше клієнтів!
+                </p>
+                <div class="review__stars">
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                </div>
+              </div>
+
+              <div class="swiper-slide review">
+                <div class="review__header">
+                  <div class="review__avatar">
+                    <img src="./img/avatars/author-4.webp" alt="review author avatar" />
+                  </div>
+                  <div class="review__author">
+                    <p class="review__author-name">Максим</p>
+                    <p class="review__author-address">Одесса - Дюссельдорф</p>
+                    <p class="review__date">1 Квітня 2024</p>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Цей сервіс економить купу часу та нервів. Не треба сидіти в десятках
+                  Facebook-груп, шукати випадкові оголошення. Тут усе зібрано, структуровано й
+                  доступно. Особливо зручно , що можна подивитися історію перевізника – одразу
+                  видно, кому можна довіряти.
+                </p>
+                <div class="review__stars">
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                  <img class="review__star" src="./img/svg/star.svg" alt="review star" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination reviews__pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>footer</footer>
     <script src="js/menu.js"></script>
     <script src="js/countries.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>
